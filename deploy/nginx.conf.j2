@@ -1,3 +1,4 @@
+# {{ ansible_managed }}
 upstream ors_subscribe_email_api {
     {% for server in upstream_servers %}
         server {{ server.ip }}:{{ server.port }};
