@@ -4,7 +4,11 @@ python:
 
 install:
   - "pip install pipenv"
+  - "pip install codecov"
   - "pipenv install --dev --skip-lock"
 
 script:
-  - true
+  - pipenv run pytest --cov=ors_subscribe_email tests
+
+after_success:
+  - codecov
