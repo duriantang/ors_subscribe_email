@@ -1,0 +1,26 @@
+DEBUG = False
+
+MYSQL_USER = '{{ mysql_user }}'
+MYSQL_PASSWORD = '{{ mysql_password }}'
+MYSQL_HOST = '{{ mysql_host }}'
+MYSQL_PORT = '{{ mysql_port }}'
+MYSQL_DB = '{{ mysql_db }}'
+
+HOST = '{{ server_ip }}'
+PORT = '{{ server_port }}'
+
+DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': MYSQL_DB,
+            'USER': MYSQL_USER,
+            'PASSWORD': MYSQL_PASSWORD,
+            'HOST': MYSQL_HOST,
+            'PORT': MYSQL_PORT,
+            'OPTIONS': {
+                "init_command": "SET storage_engine=INNODB;",
+                }
+            }
+        }
+
+LOG_LEVEL = 'INFO'
