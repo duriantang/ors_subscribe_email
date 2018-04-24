@@ -1,0 +1,22 @@
+[[source]]
+url = "https://mirrors.ustc.edu.cn/pypi/web/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "==2.0.4"
+mysqlclient = "*"
+gevent = "*"
+gunicorn = "*"
+django-cors-headers = "*"
+setproctitle = "*"
+
+[dev-packages]
+"flake8" = "*"
+yapf = "*"
+rope = "*"
+ipython = "*"
+pytest = "*"
+
+[requires]
+python_version = "3.5"
