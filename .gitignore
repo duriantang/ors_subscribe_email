@@ -68,3 +68,4 @@ ttsdk
 .ipynb_checkpoints/
 .sonarlint/
 .pytest_cache/
+htmlcov/
