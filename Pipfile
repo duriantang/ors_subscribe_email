@@ -17,6 +17,7 @@ yapf = "*"
 rope = "*"
 ipython = "*"
 pytest = "*"
+pytest-cov = "*"
 
 [requires]
 python_version = "3.5"
