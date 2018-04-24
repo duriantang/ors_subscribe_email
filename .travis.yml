@@ -8,6 +8,7 @@ install:
   - "pipenv install --dev --skip-lock"
 
 script:
+  - touch ors_subscribe_email/ors_subscribe_email/site_settings.py
   - pipenv run pytest --cov=ors_subscribe_email tests
 
 after_success:
