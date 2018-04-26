@@ -1,5 +1,5 @@
 from .models import Email
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
 from django.core.validators import validate_email, ValidationError
 
 OK_RESP = {
@@ -29,3 +29,7 @@ def save_email(request, *args, **kwargs) -> JsonResponse:
     email_row, created = Email.objects.get_or_create(slug=slug, email=email)
 
     return JsonResponse(OK_RESP)
+
+
+def ping(request, *args, **kwargs) -> HttpResponse:
+    return HttpResponse('pong')
