@@ -4,7 +4,7 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "==2.0.4"
+django = "<2.1"
 mysqlclient = "*"
 gevent = "*"
 gunicorn = "*"
@@ -20,4 +20,4 @@ pytest = "*"
 pytest-cov = "*"
 
 [requires]
-python_version = "3.5"
+python_version = "3.7"

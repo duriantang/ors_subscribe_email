@@ -2,7 +2,7 @@
 
 [Origin Sport]: https://originsport.io/ "Origin Sport"
 
-[language]: https://img.shields.io/badge/language-python%203.5+-blue.svg
+[language]: https://img.shields.io/badge/language-python%203.7+-blue.svg
 [language website]: https://www.python.org/ "Welcome to Python.org"
 
 [license]: https://img.shields.io/github/license/duriantang/ors_subscribe_email.svg
